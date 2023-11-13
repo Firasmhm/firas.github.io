@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inscription</title>
+    </head>
+    <body>
+        <img src="img.jpeg" alt="none" width="1500" height="500">
+        <br>
+        <br>
+        <hr>
+        <br>
+        <label for="nom">First Name* </label>
+        <input type="text" id="nom" name="nom" minlength="3" required>
+        <br>
+        <br>
+        <label for="prenom">Last Name </label>
+        <input type="text" id="prenom" name="prenom" minlength="3">
+        <br>
+        <br>
+        <label for="adresse">Adresse</label>
+        <textarea name="adresse" id="adresse" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="telephone">Phone Number*</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
+        <br>
+        <br>
+        <label for="date">Date of birth</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <br>
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="motDePasse">Password*</label>
+        <input type="password" id="motDePasse" name="motDePasse" pattern="^
+        (?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*
+        [@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+        <br>
+        <br>
+        <label for="confirmmotDePasse">Confirm Password*</label>
+        <input type="password" id="confirmmotDePasse" name="confirmmotDePasse" pattern="^
+        (?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*
+        [@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="submit" value="Reset">
+        <br>
+        <hr>
+        <br>
+        <h1>Contact us</h1>
+        <a href="mailto:firas.mahmoudi@esprit.tn">email : firas.mahmoudi@esprit.tn</a>
+    </body>
+</html>
